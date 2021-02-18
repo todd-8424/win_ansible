@@ -1,0 +1,2 @@
+- name: Run win_ping module 
+  ansible.windows.win_ping:
