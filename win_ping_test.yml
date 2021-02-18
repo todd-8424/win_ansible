@@ -1,7 +1,6 @@
 ---
 - name: win_ping_test
   hosts: all
-  become: True
   roles:
     - win_ping_test
       
