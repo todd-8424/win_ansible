@@ -6,7 +6,7 @@
       debug:
         msg: 
           - "Ansible Facts"
-          - "{{ ansible_user }}"
+          - "ansible_fact = {{ ansible_user }}"
 
     - name: Print out all morpheus vars
       debug: 
