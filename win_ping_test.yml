@@ -12,8 +12,8 @@
       debug: 
         msg: 
         - "This is the morpheus json vars"
-        - "{{ hostvars[inventory_hostname]['morpheus']['server'] | to_nice_json }}"
-        
+        - "{{ hostvars[inventory_hostname]['morpheus']['server'] | to_nice_json | deault({})}}"
+
   roles:
     - win_ping_test
       
