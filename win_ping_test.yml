@@ -11,8 +11,8 @@
     - name: Print out all morpheus vars
       debug: 
         msg: 
-        - "This is the morpheus json vars"
-        - "{{ hostvars[inventory_hostname]['morpheus']['server'] | to_nice_yaml | default({})}}"
+        - "This is the morpheus yaml vars"
+        - "{{ hostvars[inventory_hostname]['morpheus']['server'] | to_nice_yaml }}"
 
   roles:
     - win_ping_test
