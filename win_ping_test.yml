@@ -8,6 +8,11 @@
           - "Ansible Facts"
           - "ansible_user = {{ ansible_user }}"
 
+    - name: Debug hostvars
+      debug:
+        var: hostvars[inventory_hostname]
+        verbosity: 4
+
   roles:
     - win_ping_test
       
