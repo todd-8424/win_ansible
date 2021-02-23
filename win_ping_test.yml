@@ -10,7 +10,7 @@
 
     - name: Debug hostvars
       debug:
-        var: hostvars[inventory_hostname]
+        msg: "{{ hostvars[inventory_hostname] | to_nice_yaml }}"
         
 
   roles:
