@@ -8,10 +8,6 @@
           - "Ansible Facts"
           - "ansible_user = {{ ansible_user }}"
 
-    - name: Print out all morpheus vars
-      debug: 
-        msg: "{{ hostvars[inventory_hostname]['morpheus']['server'] | to_yaml }}"
-
   roles:
     - win_ping_test
       
