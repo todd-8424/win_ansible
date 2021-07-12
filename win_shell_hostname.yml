@@ -1,0 +1,10 @@
+---
+- hosts: all
+  tasks:
+    - name: REGISTER | Testing win command
+      win_shell: hostname
+      register: hostname
+ 
+    - name: DEBUG | Output result
+      debug:
+        var: hostname
